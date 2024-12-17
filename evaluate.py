@@ -44,12 +44,12 @@ def evaluate_jd_cv_pairs(model, data, tokenizer, block_size, device, metrics_cal
         # token ID of separator 
         sep_token_id = tokenizer('###').item()
         
-        # Create JD chunks on CPU
+        # Create JD chunks
         for i in range(0, len(jd_tokens_list), jd_size - overlap):
             chunk = jd_tokens_list[i:i + jd_size]
             jd_chunks.append(chunk)
         
-        # Create CV chunks on CPU
+        # Create CV chunks 
         for i in range(0, len(cv_tokens_list), cv_size - overlap):
             chunk = cv_tokens_list[i:i + cv_size]
             cv_chunks.append(chunk)
@@ -65,7 +65,8 @@ def evaluate_jd_cv_pairs(model, data, tokenizer, block_size, device, metrics_cal
                 combined = combined.unsqueeze(0).to(device)  # Add batch dimension
                 target = torch.tensor([metrics_calculator.label_map[label]]).to(device)
                 with torch.no_grad():
-                    score, loss = model(combined, target)
+                    score, loss = model(combined, target)\
+                    # loss calculation
                     if calc_loss:
                         val_loss += loss.item()
                         norm_loss += 1
@@ -129,6 +130,7 @@ def main():
     checkpoint = checkpoint_manager.load_checkpoint(model, checkpoint_path=checkpoint_path, map_location=device)
     model = model.to(device)
 
+    # Load tokenizer
     tokenizer = BPETokenizer()
     
     # for v0 models
@@ -194,6 +196,7 @@ def main():
         os.path.join(args.output_dir, 'confusion_matrix.png')
     )
     
+    # Save model perf
     print(f"\nResults saved to {args.output_dir}")
 
 if __name__ == '__main__':

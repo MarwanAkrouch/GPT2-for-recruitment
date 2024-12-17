@@ -1,4 +1,5 @@
 __pycache__/
+.~lock.test.csv#
 # Ignore checkpoint directory
 #checkpoints/
 #*.pt

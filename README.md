@@ -7,10 +7,8 @@ Edwin is a project designed to evaluate the similarity between job descriptions 
 ```
 app.py
 checkpoints/
-    gpt2_b1024_l12_h12_e768_lora_nowd_lt0.3_ht0.8/
     gpt2_b1024_l12_h12_e768_nowd_lt0.4_ht0.75/
-    v0/
-config.json
+    v0/gpt2_b1024_l12_h12_e768_slightbalancedataset/
 data/
     test.csv
     train.csv
@@ -25,12 +23,12 @@ evaluate.py
 evaluation_results/
 main.py
 metrics.py
-minGPT/
+minGPT/      -> minGPT model
 model.py
 predict.py
-runs/
+runs/        ->  tensorboard logs
 trainer.py
-utils.py
+utils.py     ->  checkpoint saving and loading
 ```
 
 ## Dependencies

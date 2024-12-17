@@ -63,13 +63,14 @@ if st.session_state.resumes:
     for i, resume in enumerate(st.session_state.resumes, 1):
         st.write(f"{i}. Resume (Preview): {resume[:100]}...")
 
+# special tokens : separator token and pad token
 sep_token = '###'
 pad_token_id = 0  # 50256
 
 def get_category(score):
-    if score < 0.35:
+    if score < thresholds[0]:
         return "No Fit", "🔴"
-    elif score < 0.85:
+    elif score < thresholds[1]:
         return "Potential Fit", "🟡"
     else:
         return "Good Fit", "🟢"
