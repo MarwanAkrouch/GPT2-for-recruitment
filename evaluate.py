@@ -107,7 +107,7 @@ def plot_confusion_matrix(conf_matrix, save_path):
 def main():
     parser = argparse.ArgumentParser(description='Evaluate JD-Resume matching model')
     parser.add_argument('--checkpoint_dir', type=str, default='checkpoints/')
-    parser.add_argument('--model_name', type=str, default='gpt2_b1024_l12_h12_e768_lora_nowd_lt0.3_ht0.8')
+    parser.add_argument('--model_name', type=str, default='gpt2_b1024_l12_h12_e768_nowd_lt0.3_ht0.8')
     parser.add_argument('--checkpoint', type=str, default='best.pt')
     parser.add_argument('--test_data', type=str, default='data/test.csv')
     parser.add_argument('--output_dir', type=str, default='evaluation_results')

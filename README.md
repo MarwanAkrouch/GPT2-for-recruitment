@@ -12,7 +12,6 @@ checkpoints/
     v0/
 config.json
 data/
-    .~lock.test.csv#
     test.csv
     train.csv
 data.py
@@ -27,11 +26,6 @@ evaluation_results/
 main.py
 metrics.py
 minGPT/
-    .gitignore
-    demo.ipynb
-    generate.ipynb
-    LICENSE
-    mingpt/
 model.py
 predict.py
 runs/
