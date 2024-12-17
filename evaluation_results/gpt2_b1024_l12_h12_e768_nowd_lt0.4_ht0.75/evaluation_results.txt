@@ -1,0 +1,23 @@
+Model: gpt2_b1024_l12_h12_e768_nowd_lt0.4_ht0.75
+
+Evaluation Results:
+Accuracy: 0.4429
+MSE: 0.1697
+RMSE: 0.4120
+
+Per-Class Metrics:
+
+No Fit:
+  precision: 0.6611
+  recall: 0.5099
+  f1: 0.5758
+
+Potential Fit:
+  precision: 0.2818
+  recall: 0.6081
+  f1: 0.3852
+
+Good Fit:
+  precision: 0.5143
+  recall: 0.1572
+  f1: 0.2408

@@ -1,0 +1,26 @@
+{
+    "device": "cuda",
+    "system": {
+        "seed": 3407,
+        "work_dir": "./out/edwin/"
+    },
+    "model_type": "gpt2",
+    "label_map": {
+        "No Fit": 0.0,
+        "Potential Fit": 0.6,
+        "Good Fit": 1.0
+    },
+    "thresholds": [
+        0.4,
+        0.75
+    ],
+    "val_ratio": 0.1,
+    "batch_size": 8,
+    "num_workers": 4,
+    "learning_rate": 0.0001,
+    "max_iters": 50000,
+    "eval_interval": 200,
+    "gradient_accumulation_steps": 8,
+    "weight_decay": 1e-06,
+    "use_lora": false
+}

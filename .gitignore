@@ -1,0 +1,5 @@
+__pycache__/
+# Ignore checkpoint directory
+#checkpoints/
+#*.pt
+#*.pth

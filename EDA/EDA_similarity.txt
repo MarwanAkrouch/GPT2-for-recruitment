@@ -1,0 +1,130 @@
+TF-IDF Similarity Results:
+
+Threshold 0.2:
+Accuracy: 0.2568498638038776
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      0.69      0.36      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.28      0.35      0.31      1556
+
+     accuracy                           0.26      6241
+    macro avg       0.18      0.35      0.22      6241
+ weighted avg       0.13      0.26      0.17      6241
+
+
+Threshold 0.4:
+Accuracy: 0.24771671206537413
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      0.99      0.39      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.39      0.01      0.03      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.21      0.33      0.14      6241
+ weighted avg       0.16      0.25      0.10      6241
+
+
+Threshold 0.6:
+Accuracy: 0.24707578913635636
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      1.00      0.40      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.00      0.00      0.00      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.08      0.33      0.13      6241
+ weighted avg       0.06      0.25      0.10      6241
+
+
+Sentence Transformer Similarity Results:
+
+Threshold 0.5:
+Accuracy: 0.25108155744271754
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.41      0.01      0.03      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.25      0.99      0.40      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.22      0.34      0.14      6241
+ weighted avg       0.16      0.25      0.11      6241
+
+
+Threshold 0.7:
+Accuracy: 0.25316455696202533
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      0.06      0.10      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.25      0.95      0.40      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.17      0.34      0.17      6241
+ weighted avg       0.13      0.25      0.12      6241
+
+
+Threshold 0.9:
+Accuracy: 0.24675532767184746
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      0.99      0.39      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.32      0.01      0.03      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.19      0.33      0.14      6241
+ weighted avg       0.14      0.25      0.10      6241
+
+
+Jaccard Similarity Results:
+
+Threshold 0.1:
+Accuracy: 0.23986540618490626
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.24      0.93      0.38      1542
+       No Fit       0.26      0.02      0.04      3143
+Potential Fit       0.00      0.00      0.00      1556
+
+     accuracy                           0.24      6241
+    macro avg       0.17      0.32      0.14      6241
+ weighted avg       0.19      0.24      0.11      6241
+
+
+Threshold 0.2:
+Accuracy: 0.24707578913635636
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      1.00      0.40      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.00      0.00      0.00      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.08      0.33      0.13      6241
+ weighted avg       0.06      0.25      0.10      6241
+
+
+Threshold 0.3:
+Accuracy: 0.24707578913635636
+Classification Report:
+                precision    recall  f1-score   support
+
+     Good Fit       0.25      1.00      0.40      1542
+       No Fit       0.00      0.00      0.00      3143
+Potential Fit       0.00      0.00      0.00      1556
+
+     accuracy                           0.25      6241
+    macro avg       0.08      0.33      0.13      6241
+ weighted avg       0.06      0.25      0.10      6241
