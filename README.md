@@ -1,6 +1,6 @@
-# Edwin
+# GPT2 for recruitment
 
-Edwin is a project designed to evaluate the similarity between job descriptions (JDs) and resumes (CVs) using a GPT-based model. This repository contains the code for training qnd evaluating the similarity scores between JDs and CVs. There's a demo app for the POC.
+GPT2 for recruitment is a project designed to evaluate the similarity between job descriptions (JDs) and resumes (CVs) using a GPT-based model. This repository contains the code for training qnd evaluating the similarity scores between JDs and CVs. There's a demo app for the POC.
 
 ## Project Structure
 
